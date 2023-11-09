@@ -3,82 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Lasanha de carne moída</title>
 </head>
 <body>
-    <header>
-        <h1>Lasanha de carne moída</h1>
-        <p>Uma receita deliciosa e fácil de preparar</p>
+    <header class="header-recipes">
+        <h1 class="recipes-title">Lasanha de carne moída</h1>
+        <p class="recipes-text">Uma receita deliciosa e fácil de preparar</p>
     </header>
     <main>
 
-        <section>
-            <h3>Igredientes (15 Porções)</h3>
-            <table border="1">
-                <tr>
-                    <td><strong>Quant</strong></td> <td><strong>Igredientes:</strong></td> 
-                </tr>
-                <tr>
-                    <td>500g</td><td>de massa de lasanha</td>
-                </tr>
-                <tr>
-                    <td>2</td><td>caixas de creme de leite</td>
-                </tr>
-                    <td>500g</td><td> de mussarela</td>
-                <tr>
-                    <td>3</td><td>colheres de farinha de trigo</td>
-                </tr>
-                    <td>2</td><td>copos de leite</td>
-                <tr>
-                    <td>3</td><td>colheres de óleo</td>
-                </tr>
-                    <td>3</td><td>dentes de alho amassados</td>
-                <tr>
-                    <td>500g</td><td>de carne moída</td>
-                </tr>
-                    <td>3</td><td>colheres de manteiga</td>
-                <tr>
-                    <td>500g</td><td>de presunto</td>
-                </tr>
-                <tr>
-                    <td>add</td><td>sal a gosto</td>
-                </tr>
-                <tr>
-                    <td>1</td><td>cebola ralada</td>
-                </tr>
-                <tr>
-                    <td>1</td><td>caixa de molho de tomate</td>
-                </tr>
-                <tr>
-                    <td>1</td><td>pacote de queijo ralado</td>
-                </tr>
-            </table>
+        <section class="container-1">
+
+            <div class="ingredients">
+
+                <h3 class="ingredientes-title">Igredientes (15 Porções)</h3>
+
+                <table class="ingredientes-table">
+                    <tr>
+                        <th class="table-title">Quant</th> <th class="table-title">Igredientes:</th> 
+                    </tr>
+                    <tr>
+                        <td class="table-quant">500g</td><td class="table-ingredient">de massa de lasanha</td>
+                    </tr>
+                    <tr>
+                        <td class="table-quant">2</td><td class="table-ingredient">caixas de creme de leite</td>
+                    </tr>
+                        <td class="table-quant">500g</td><td class="table-ingredient"> de mussarela</td>
+                    <tr>
+                        <td class="table-quant">3</td><td class="table-ingredient">colheres de farinha de trigo</td>
+                    </tr>
+                        <td class="table-quant">2</td><td class="table-ingredient">copos de leite</td>
+                    <tr>
+                        <td class="table-quant">3</td><td class="table-ingredient">colheres de óleo</td>
+                    </tr>
+                        <td class="table-quant">3</td><td class="table-ingredient">dentes de alho amassados</td>
+                    <tr>
+                        <td class="table-quant">500g</td><td class="table-ingredient">de carne moída</td>
+                    </tr>
+                        <td class="table-quant">3</td><td class="table-ingredient">colheres de manteiga</td>
+                    <tr>
+                        <td class="table-quant">500g</td><td class="table-ingredient">de presunto</td>
+                    </tr>
+                    <tr>
+                        <td class="table-quant">add</td><td class="table-ingredient">sal a gosto</td>
+                    </tr>
+                    <tr>
+                        <td class="table-quant">1</td><td class="table-ingredient">cebola ralada</td>
+                    </tr>
+                    <tr>
+                        <td class="table-quant">1</td><td class="table-ingredient">caixa de molho de tomate</td>
+                    </tr>
+                    <tr>
+                        <td class="table-quant">1</td><td class="table-ingredient">pacote de queijo ralado</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <img class="recipes-img" src="./imagens/lasanha.jpg"  width="600px" height="400px" alt="">
+
         </section>
 
-        <section>
-            <h3>Modo de Preparo:</h3>
-            <ol>
-                <li>Lasanha: <br>
+        <section class="container-2">
+
+            <h3 class="preparation-title">Modo de Preparo:</h3>
+
+            <ol class="preparation-list">
+
+                <li class="preparation-items"><span class="span" > Lasanha: </span>
                     Cozinhe a massa segundo as orientações do fabricante, despeje em um refratário com água gelada 
                     para não grudar e reserve.</li>
-                <li>Molho à bolonhesa: <br>
+
+                <li class="preparation-items"><span class="span">  Molho à bolonhesa:</span>
                     Refogue o alho, a cebola, a carne moída, o molho de tomate, deixe cozinhar por 3 minutos e reserve.</li>
-                <li>Molho branco: <br>
+
+                <li class="preparation-items"><span class="span">  Molho branco:</span>
                     Derreta a margarina, coloque as 3 colheres de farinha de trigo e mexa.</li>
-                <li>Despeje o leite aos poucos e continue mexendo.</li>
-                <li>Por último, coloque o creme de leite, mexa por 1 minuto e desligue o fogo.</li>
-                <li>Montagem: <br>
+
+                <li class="preparation-items">Despeje o leite aos poucos e continue mexendo.</li>
+
+                <li class="preparation-items">Por último, coloque o creme de leite, mexa por 1 minuto e desligue o fogo.</li>
+
+                <li class="preparation-items"><span class="span"> Montagem:</span>
                     Despeje uma parte do molho à bolonhesa em um refratário, a metade da massa, a metade do presunto,
                      a metade da mussarela, todo o molho branco e o restante da massa..</li>
-                <li>Repita as camadas até a borda do recipiente.</li>
-                <li>Finalize com o queijo ralado e leve ao forno alto (220° C), preaquecido, por cerca de 20 minutos.</li>
+
+                <li class="preparation-items">Repita as camadas até a borda do recipiente.</li>
+
+                <li class="preparation-items">Finalize com o queijo ralado e leve ao forno alto (220° C), preaquecido, por cerca de 20 minutos.</li>
             </ol>
-
-
-        </section>
-
-        <section>
-            <img src="./imagens/lasanha.jpg"  width="680px" height="405px" alt="">
+           
         </section>
         
     </main>
@@ -86,10 +101,9 @@
     
 
     
-<footer>
-    <h4>Autor: Carlos Eduardo</h4>
-    <h4>pag: 3</h4>
-    <a href="C:\Users\edu\Desktop\projetosHtml\paginaDeReceitas\capa.html">Voltar para o menu de receitas da tia Maria</a>
+<footer class="footer">
+    <h4 class="footer-text">Autor: Carlos Eduardo</h4>
+    <a class="footer-link" href="./capa.html">Voltar para o menu de receitas da tia Maria</a>
     
 </footer>
 
