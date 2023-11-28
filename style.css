@@ -255,4 +255,53 @@
     padding-block: 0.7rem;
     padding-inline: 0.7rem;
     border-radius: 15px;;
+    
+}
+
+@media (max-width:375px) {
+* {
+    padding: 0;
+    margin: 0;
+}
+ .container-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-inline: 5%;
+    
+ }
+ .ingredients {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+.container-primary {
+    gap: 1rem;
+    margin-inline: 5%;
+}
+.cover-img {
+    width: 100%;
+    height: auto;
+}
+.header-recipes {
+    margin-inline: 5%;
+    text-align: center;
+    text-wrap: wrap;
+}
+.container-2 {
+    margin-inline: 5%;
+    margin-top: 2rem;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-inline: 5%;
+    gap: 2rem;
+    margin-top: 2rem;
+}
 }
