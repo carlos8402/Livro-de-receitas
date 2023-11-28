@@ -19,6 +19,8 @@
    align-items: center;
    justify-content: center;
    padding-top: 2rem;
+   padding-bottom: 2rem;
+  
 
 }
                          /*---------------------- COVER TITLE -----------------------*/
@@ -26,7 +28,6 @@
     word-wrap: break-word;
     text-align: center;
     font-size: 3rem;
-    border-bottom: 2px solid gray;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
  
@@ -36,6 +37,7 @@
 .cover-text {
     word-wrap: break-word;
     text-align: center;
+    
     width: auto;
     max-width: 90%;
     padding-top: 2rem;
@@ -51,6 +53,11 @@
    align-items: center;
    justify-content: center;
    gap: 8rem;
+   padding-block: 3rem;
+   padding-inline: 1rem;
+   background-color:rgb(240, 212, 177);
+   border-radius: 15px;
+   margin-inline: 4rem;
    
 }
                        /*---------------------- LIST RECIPES -----------------------*/
@@ -62,9 +69,12 @@
     justify-content: center;
 }
 .list-title {
-    padding-bottom: 1rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.6rem;
+    padding-bottom: 1rem;
+   
+ 
+   
 }
 .item {
     display: flex;
@@ -73,9 +83,13 @@
     flex-wrap: wrap;
     list-style: none;
     gap: 1rem;
+    background-color: rgb(252, 236, 195);
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    border-radius: 12px;
 }
 .items {
-    border: 3px solid darkgray;
+    border: 2px solid darkgray;
     background-color:rgb(26, 26, 63); 
     color: white;
     border-radius: 10px;
@@ -95,8 +109,8 @@
     max-width: 100%;
     height: auto;
     align-items: center;
-    border: 3px solid darkgray;
-    border-radius: 15px;
+    border: 0.1px solid darkgray;
+    border-radius: 30px;
 }
 
                        /*---------------------- HEADER RECIPES -----------------------*/
@@ -108,31 +122,39 @@
     text-align: center;
     font-size: 3rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 2rem;
 }
 .recipes-text {
     word-wrap: break-word;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
-    max-width: 90%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+   
+    
 }
 
                           /*---------------------- CONTAINER-1 -----------------------*/
 .container-1 {
     display: flex;
-    flex-wrap: wrap;
     gap: 3.5rem;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem
+    padding-block: 3rem;
+    padding-inline: 1rem;
+    background-color:rgb(240, 212, 177);
+    border-radius: 15px;
+    margin-inline: 4rem;
+    
     
 }
 
                                    /*---------------------- INGREDENTS TABLE -----------------------*/  
 .ingredients {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color:rgb(240, 212, 177);
-  border-radius: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(252, 236, 195);
+  border-radius: 12px;
   padding-inline: 1rem;
   padding-block: 1rem;
 }
@@ -147,29 +169,33 @@
 
 }
 .table-quant {
-    border: 2px solid gray;
+    border: 1px solid gray;
     background-color:rgb(26, 26, 63);
     color: white;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px;
+
 }
 .table-ingredient {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
+    padding-left: 1rem;
 }
                                /*---------------------- IMG RECIPE -----------------------*/
 .recipes-img {
     max-width: 100%;
     height: auto;
     align-items: center;
-    border: 3px solid darkgray;
+    border: 1px solid darkgray;
     border-radius: 15px;
+    
 }
 
                               /*---------------------- CONTAINER-2 -----------------------*/
 .container-2 {
     background-color:rgb(240, 212, 177);
+    margin-top: 6rem;
 }
 .preparation-title {
     font-size: 2rem;
@@ -183,6 +209,24 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-color:rgb(240, 212, 177);
+    margin-inline: 3rem;
+    list-style: none;
+}
+.num-items {
+    background-color:rgb(26, 26, 63); 
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 9999px;
+    padding-inline: 0.4rem;
+    padding-block: 0.1rem;
+    list-style: none;
+    margin-right: 0.5rem;
+
+
+}
+.preparation-items {
+    
 }
                             /*---------------------- FOOTER -----------------------*/
 
@@ -191,12 +235,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 15rem;
     flex-wrap: wrap;
+    margin-block: 1rem;
 }
 .footer-text {
     font-size: 1rem;
     padding-block: 1rem;
+    opacity: 0.5;
     
 
 }
@@ -205,7 +251,7 @@
     font-size: 1rem;
     border: 2px solid gray;
     color: white;
-    background-color: rgb(110, 110, 165);
+    background-color:rgb(26, 26, 63);
     padding-block: 0.7rem;
     padding-inline: 0.7rem;
     border-radius: 15px;;
