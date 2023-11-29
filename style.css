@@ -138,6 +138,7 @@
                           /*---------------------- CONTAINER-1 -----------------------*/
 .container-1 {
     display: flex;
+    flex-wrap: wrap;
     gap: 3.5rem;
     align-items: center;
     justify-content: center;
@@ -212,6 +213,8 @@
     background-color:rgb(240, 212, 177);
     margin-inline: 3rem;
     list-style: none;
+    
+    
 }
 .num-items {
     background-color:rgb(26, 26, 63); 
@@ -222,12 +225,11 @@
     padding-block: 0.1rem;
     list-style: none;
     margin-right: 0.5rem;
-
-
-}
-.preparation-items {
     
+
+
 }
+
                             /*---------------------- FOOTER -----------------------*/
 
 .footer {
@@ -258,7 +260,7 @@
     
 }
 
-@media (max-width:375px) {
+@media (max-width:768px) {
 * {
     padding: 0;
     margin: 0;
@@ -304,4 +306,18 @@
     gap: 2rem;
     margin-top: 2rem;
 }
+}
+
+@media (min-width:769px),(max-width:900px) {
+    .preparation-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
 }
