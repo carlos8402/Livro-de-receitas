@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -19,8 +20,7 @@
    align-items: center;
    justify-content: center;
    padding-top: 2rem;
-   padding-bottom: 2rem;
-  
+   padding-bottom: 0.5rem;
 
 }
                          /*---------------------- COVER TITLE -----------------------*/
@@ -29,9 +29,6 @@
     text-align: center;
     font-size: 3rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
- 
-
 }
                          /*---------------------- COVER TEXT -----------------------*/
 .cover-text {
@@ -44,7 +41,6 @@
     padding-bottom: 2rem;
     font-size: 1.5rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
                        /*---------------------- CONTAINER PRIMARY -----------------------*/
 .container-primary {
@@ -58,7 +54,8 @@
    background-color:rgb(240, 212, 177);
    border-radius: 15px;
    margin-inline: 4rem;
-   
+   margin-bottom: 2rem;
+  
 }
                        /*---------------------- LIST RECIPES -----------------------*/
 .List-recipes {
@@ -71,10 +68,7 @@
 .list-title {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.6rem;
-    padding-bottom: 1rem;
-   
- 
-   
+    padding-bottom: 1rem; 
 }
 .item {
     display: flex;
@@ -100,8 +94,7 @@
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-   
-  
+
 }
 
                          /*---------------------- COVER IMG -----------------------*/
@@ -109,65 +102,84 @@
     max-width: 100%;
     height: auto;
     align-items: center;
-    border: 0.1px solid darkgray;
     border-radius: 30px;
+    
+    
 }
 
                        /*---------------------- HEADER RECIPES -----------------------*/
 .header-recipes {
     padding-top: 2rem;
 }
+
 .recipes-title {
     word-wrap: break-word;
     text-align: center;
     font-size: 3rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 2rem;
+    ;
 }
 .recipes-text {
     word-wrap: break-word;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-   
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+ 
     
 }
 
                           /*---------------------- CONTAINER-1 -----------------------*/
 .container-1 {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
-    gap: 3.5rem;
+    gap: 2rem;
     align-items: center;
-    justify-content: center;
-    padding-block: 3rem;
-    padding-inline: 1rem;
+    padding-inline: 3rem;
     background-color:rgb(240, 212, 177);
     border-radius: 15px;
+    border-style: dashed;
+    border-color: rgb(206, 181, 150) ;
     margin-inline: 4rem;
-    
-    
+    padding-block: 1rem;
 }
 
                                    /*---------------------- INGREDENTS TABLE -----------------------*/  
 .ingredients {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: rgb(252, 236, 195);
   border-radius: 12px;
   padding-inline: 1rem;
-  padding-block: 1rem;
+  padding-block: 2.5rem;
+  min-width: 0;
+  flex-basis: 25rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  
 }
 .ingredientes-title {
     font-size: 2rem;
     text-align: center;
+    text-align: start;
+    border-bottom: 1px dashed rgb(206, 181, 150) ;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    
 }
 
-.table-title {
+.table-title1 {
     font-size: 1.5rem;
     padding-bottom: 1rem;
-
+    text-align:left;
+   
+}
+.table-title2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align:left;
+    padding-left: 1rem;
 }
 .table-quant {
     border: 1px solid gray;
@@ -182,14 +194,19 @@
     font-size: 1.5rem;
     font-weight: 700;
     padding-left: 1rem;
+   
+   
 }
                                /*---------------------- IMG RECIPE -----------------------*/
 .recipes-img {
-    max-width: 100%;
-    height: auto;
-    align-items: center;
-    border: 1px solid darkgray;
+    flex-basis: 25rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    object-fit: cover;
     border-radius: 15px;
+  
+
     
 }
 
@@ -213,6 +230,8 @@
     background-color:rgb(240, 212, 177);
     margin-inline: 3rem;
     list-style: none;
+    max-width: fit-content;
+    margin-inline: auto;
     
     
 }
@@ -225,9 +244,6 @@
     padding-block: 0.1rem;
     list-style: none;
     margin-right: 0.5rem;
-    
-
-
 }
 
                             /*---------------------- FOOTER -----------------------*/
@@ -260,64 +276,25 @@
     
 }
 
-@media (max-width:768px) {
+@media (max-width:1100px) {
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
- .container-1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin-inline: 5%;
-    
- }
- .ingredients {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
- }
 .container-primary {
-    gap: 1rem;
-    margin-inline: 5%;
+    gap: 2rem;
 }
-.cover-img {
-    width: 100%;
-    height: auto;
+.container-1 {
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+  
 }
-.header-recipes {
-    margin-inline: 5%;
-    text-align: center;
-    text-wrap: wrap;
-}
-.container-2 {
-    margin-inline: 5%;
-    margin-top: 2rem;
-}
-.footer {
+.ingredients {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-inline: 5%;
-    gap: 2rem;
-    margin-top: 2rem;
-}
+    align-items: center;
 }
 
-@media (min-width:769px),(max-width:900px) {
-    .preparation-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+ }
 
-    }
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-       
-    }
-}
