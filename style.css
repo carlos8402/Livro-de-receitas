@@ -48,13 +48,13 @@
    flex-wrap: wrap;
    align-items: center;
    justify-content: center;
-   gap: 8rem;
-   padding-block: 3rem;
+   gap: 2rem;
+   padding-block: 2rem;
    padding-inline: 1rem;
    background-color:rgb(240, 212, 177);
    border-radius: 15px;
-   margin-inline: 4rem;
-   margin-bottom: 2rem;
+   margin-inline: 1rem;
+
   
 }
                        /*---------------------- LIST RECIPES -----------------------*/
@@ -62,13 +62,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    flex-grow: 1;
+    
 }
 .list-title {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.6rem;
-    padding-bottom: 1rem; 
+    padding-bottom: 2rem; 
+    text-align: center;
 }
 .item {
     display: flex;
@@ -87,8 +89,9 @@
     background-color:rgb(26, 26, 63); 
     color: white;
     border-radius: 10px;
-    padding-inline: 1rem;
+   text-align: center;
     padding-block: 0.5rem;
+
 }
 .list-link {
     text-decoration: none;
@@ -103,6 +106,8 @@
     height: auto;
     align-items: center;
     border-radius: 30px;
+    flex-grow: 1;
+   
     
     
 }
@@ -134,38 +139,36 @@
 .container-1 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    padding-inline: 3rem;
+    gap: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
     background-color:rgb(240, 212, 177);
     border-radius: 15px;
     border-style: dashed;
     border-color: rgb(206, 181, 150) ;
-    margin-inline: 4rem;
-    padding-block: 1rem;
+    margin-inline: 1rem;
+    
+  
 }
 
                                    /*---------------------- INGREDENTS TABLE -----------------------*/  
 .ingredients {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 12px;
-  padding-inline: 1rem;
-  padding-block: 2.5rem;
-  min-width: 0;
   flex-basis: 25rem;
   flex-grow: 1;
-  flex-shrink: 0;
-  box-sizing: border-box;
+  flex-shrink: 1;
+  height: auto;
   
 }
 .ingredientes-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
-    text-align: start;
     border-bottom: 1px dashed rgb(206, 181, 150) ;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
+    
+   
     
 }
 
@@ -189,31 +192,32 @@
     border-radius: 5px;
 
 }
+.ingredientes-table {
+    margin-inline: 1rem;
+    padding-block: 1rem;
+}
 .table-ingredient {
+   
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    padding-left: 1rem;
-   
-   
+    padding-left: 1rem; 
 }
                                /*---------------------- IMG RECIPE -----------------------*/
 .recipes-img {
     flex-basis: 25rem;
     flex-grow: 1;
     flex-shrink: 1;
+    height: auto;
     min-width: 0;
     object-fit: cover;
     border-radius: 15px;
-  
-
-    
 }
 
                               /*---------------------- CONTAINER-2 -----------------------*/
 .container-2 {
     background-color:rgb(240, 212, 177);
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 .preparation-title {
     font-size: 2rem;
@@ -251,16 +255,19 @@
 .footer {
     background-color:rgb(240, 225, 186);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
-    flex-wrap: wrap;
-    margin-block: 1rem;
+    flex-direction: column;
+    gap: 4rem;
+ 
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 .footer-text {
     font-size: 1rem;
-    padding-block: 1rem;
     opacity: 0.5;
+   
     
 
 }
@@ -276,25 +283,40 @@
     
 }
 
-@media (max-width:1100px) {
+@media (min-width:800px) {
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 .container-primary {
-    gap: 2rem;
+    margin-inline: 2rem;
 }
 .container-1 {
-    flex-direction: column-reverse;
-    padding-top: 2rem;
-  
-}
-.ingredients {
+    margin-inline: 2rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
- }
+.recipes-img {
+ 
+   height: auto;
+   flex-grow: 1;
+}
+}
+.ingredients {
+    align-items: center;
+  
+
+}
+.footer {
+    display: flex;  
+    flex-direction: row;
+    padding-top: 3rem;
+    justify-content: space-around;
+    
+}
+
+ 
 
